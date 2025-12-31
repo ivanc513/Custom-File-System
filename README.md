@@ -17,14 +17,7 @@ To learn how to add new capabilities to existing filesystem paradigms."
 ## Architecture / Design
 A block-based user space file system utilizing superblocks, inodes, and data blocks
 architecture. Incorporated with the use of FUSE and mounting virtual disks.
-Further encapsulates metadata as structs placed in diagram seen below.
-          d_bitmap_ptr       d_blocks_ptr
-               v                  v
-+----+---------+---------+--------+--------------------------+
-| SB | IBITMAP | DBITMAP | INODES |       DATA BLOCKS        |
-+----+---------+---------+--------+--------------------------+
-0    ^                   ^
-i_bitmap_ptr        i_blocks_ptr
+Further encapsulates metadata as structs placed in SB->imap->blocks format.
 
 
 ## Key Concepts
