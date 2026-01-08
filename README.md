@@ -1,7 +1,7 @@
 # Custom File System
 
 ## Overview
-Project assignment from CS537 - Operating Systems at UW-Madison
+Project assignment from CS537 - Operating Systems at UW-Madison completed with another student
 
 ## Objective
 "To understand how filesystem operations are implemented.
